@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Lyricer",
+    "description": "Get the lyrics for any song!",
+    "version": "1.0",
+    "browser_action":{
+        "default_icon": "icon.png"
+    },
+    "permissions": [],
+    "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["script.js"]
+  }]
+}
